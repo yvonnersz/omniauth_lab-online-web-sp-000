@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/' => 'welcome#home'
   get '/logout' => 'sessions#destroy'
 
+  get '/app/github/callback' => 'sessions#create'
+
 end
