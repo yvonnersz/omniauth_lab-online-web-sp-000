@@ -5,6 +5,6 @@ Rails.application.routes.draw do
 
   root 'welcome#home'
   get '/' => 'welcome#home'
-  get '/logout' => '#sessions#destroy'
+  get '/logout' => 'sessions#destroy'
 
 end
